@@ -1,90 +1,60 @@
-# \# Akıllı Tarım ve Sera Yönetim Otomasyonu
+# Akıllı Tarım ve Sera Yönetim Otomasyonu
+Fırat Üniversitesi Dönem Projesi
 
-# 
+Bu proje, modern seralardaki ve tarım alanlarındaki çevresel koşulları izlemek ve otomatize etmek amacıyla geliştirilen bir dönem projesidir.
 
-# Fırat Üniversitesi Dönem Projesi
+## 🎯 Projenin Amacı
+Tarım süreçlerini dijitalleştirerek kaynak verimliliğini artırmak, sera içi iklimlendirme ve sulama süreçlerini optimize etmek.
 
-# 
+## 🛠️ Kullanılan Teknolojiler
+- **Geliştirme Ortamı:** Visual Studio & C# (.NET)
+- **Arayüz Bileşenleri:** DevExpress
+- **Veritabanı:** SQLite
+- **Sürüm Kontrolü:** Git & GitHub
+- **Yapay Zeka:** Google Gemini API
 
-# Bu proje, modern seralardaki ve tarım alanlarındaki çevresel koşulları izlemek ve otomatize etmek amacıyla geliştirilen bir dönem projesidir.
+## 📁 Proje Klasör Yapısı
+```text
+akilli-tarim-ve-sera-yonetim-otomasyonu/
+├── docs/             # Proje raporları, UML şemaları ve ER diyagramları
+├── src/              # C# kaynak kodları ve Visual Studio Solution (.sln)
+├── tests/            # Birim testler (Unit Tests)
+├── appsettings.example.json # Örnek konfigürasyon şablonu
+├── .gitignore        # Git tarafından takip edilmeyecek dosyalar
+└── README.md         # Proje dokümantasyon dosyası
+```
 
-# 
+## 🚀 Kurulum ve Çalıştırma Adımları
 
-# \## 🎯 Projenin Amacı
+Projeyi kendi bilgisayarınızda yerel ortamınızda çalıştırmak için şu adımları izleyebilirsiniz:
 
-# 
+1. **Depoyu Klonlayın:**
+   ```bash
+   git clone https://github.com/yalper02/akilli-tarim-ve-sera-yonetim-otomasyonu.git
+   ```
 
-# Tarım süreçlerini dijitalleştirerek kaynak verimliliğini artırmak, sera içi iklimlendirme ve sulama süreçlerini optimize etmek.
+2. **Konfigürasyon Dosyasını Oluşturun:**
+Proje ana dizininde bulunan `appsettings.example.json` dosyasını kopyalayın ve aynı dizine adını appsettings.json yaparak yapıştırın.
+appsettings.json dosyasını açarak kendi Google Gemini API anahtarınızı ilgili alana ekleyin:
 
-# 
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=tarim.db;"
+  },
+  "ApiSettings": {
+    "GeminiApiKey": "BURAYA_GERCEK_API_ANAHTARINIZI_YAZIN"
+  }
+}
+```
 
-# \## 🛠️ Kullanılan Teknolojiler
+(Not: appsettings.json dosyası .gitignore ile korunduğu için GitHub'a yüklenmez, güvenliğiniz altındadır.)
 
-# \- \*\*Geliştirme Ortamı:\*\* Visual Studio \& C# (.NET)
+3. **Projeyi Visual Studio ile Açın:**
+Visual Studio uygulamasını açın ve projenizin alt klasöründe bulunan .csproj uzantılı dosya ile projeyi yükleyin.
 
-# \- \*\*Arayüz Bileşenleri:\*\* DevExpress
-
-# \- \*\*Veritabanı:\*\* SQLite
-
-# \- \*\*Sürüm Kontrolü:\*\* Git \& GitHub
-
-# \- \*\*Yapay Zeka:\*\* Google Gemini API
-
-# 
-
-# \## 🚀 Kurulum ve Çalıştırma Adımları
-
-# 
-
-# Projeyi kendi bilgisayarınızda yerel ortamınızda çalıştırmak için şu adımları izleyebilirsiniz:
-
-# 
-
-# 1\. \*\*Depoyu Klonlayın:\*\*
-
-# bash git clone https://github.com/yalper02/akilli-tarim-ve-sera-yonetim-otomasyonu.git
-
-# 
-
-# 2\. \*\*Konfigürasyon Dosyasını Oluşturun:\*\*
-
-# \- Proje ana dizininde bulunan `appsettings.example.json` dosyasını kopyalayın ve aynı dizine adını \*\*`appsettings.json`\*\* yaparak yapıştırın.
-
-# \- `appsettings.json` dosyasını açarak kendi \*\*Google Gemini API anahtarınızı\*\* ilgili alana ekleyin:
-
-# json
-
-# {
-
-# "ConnectionStrings": {
-
-# "DefaultConnection": "Data Source=tarim.db;"
-
-# },
-
-# "ApiSettings": {
-
-# "GeminiApiKey": "BURAYA\_GERCEK\_API\_ANAHTARINIZI\_YAZIN"
-
-# }
-
-# } 
-
-# 
-
-# \*(Not: `appsettings.json` dosyası `.gitignore` ile korunduğu için GitHub'a yüklenmez, güvenliğiniz altındadır.)\*
-
-# 
-
-# 3\. \*\*Projeyi Visual Studio ile Açın:\*\*
-
-# \- Visual Studio uygulamasını açın ve projenizin alt klasöründe bulunan `.csproj` uzantılı dosya ile projeyi yükleyin.
-
-# 
-
-# 4\. \*\*Çalıştırın:\*\*
-
-# \- Visual Studio üzerinde \*\*F5\*\* tuşuna basarak veya \*\*Start\*\* butonuna tıklayarak uygulamayı çalıştırın. SQLite veritabanı otomatik olarak oluşturulacaktır.
+4. **Çalıştırın:**
+Visual Studio üzerinde F5 tuşuna basarak veya Start butonuna tıklayarak uygulamayı çalıştırın. SQLite veritabanı otomatik olarak oluşturulacaktır.
 
 
 
